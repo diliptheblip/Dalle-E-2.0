@@ -1,8 +1,17 @@
 import React from 'react'
+import { download } from '../assets';
+import { downloadImage } from '../utils';
 
-const Card = () => {
+const Card = ({_id,name,prompt,photo}) => {
   return (
-    <div>
+    <div className='rounded-x1 group relative shadow-card hover:shadow-cardhover card'>
+      <img
+        className='w-full h-auto object-cover rounded-x1'
+        src={photo}
+        alt={prompt}
+      
+      
+      />
       
     </div>
   )
